@@ -1,7 +1,7 @@
 #include <stdlib.h>
-/* whatever */
+#include "compareElements.h"
 
 int compare_id_ascending ( const void *a, const void *b )
 {
-    return ( *(int*)a - *(int*)b );;
+    return ( *(element*)a.id_number - *(element*)b.id_number );
 }
