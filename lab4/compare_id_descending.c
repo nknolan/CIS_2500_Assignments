@@ -1,9 +1,9 @@
 #include <stdlib.h>
-#include <stdio.h>
+#include "compareElements.h"
 
 /* Compares ids in descending order. */
 
 int compare_id_descending( const void *a, conts void *b )
 {
-    return return ( *(int*)b - *(int*)a );
+    return  ( *(element*)b.id_number - *(element*)a.id_number );
 }
