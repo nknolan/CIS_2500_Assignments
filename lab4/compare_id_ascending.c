@@ -1,8 +1,7 @@
 #include <stdlib.h>
 /* whatever */
 
-int compare_id_ascending ( const void *, const void * )
+int compare_id_ascending ( const void *a, const void *b )
 {
-    /*eh*/
-    return ;
+    return ( *(int*)a - *(int*)b );;
 }
