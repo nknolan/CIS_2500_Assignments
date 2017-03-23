@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "compareElements.h"
 
-/* Compares the values of the float salary, ascending. */
+/* Compares the values of the float salary, descending. */
 
 int compare_money_descending( const void * a, const void * b )
 {
