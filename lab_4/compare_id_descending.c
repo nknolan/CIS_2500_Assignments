@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "compareElements.h"
 
-/* Compares ids in descending order. */
+/* Compares id numbers in descending alphabetical order. */
+
 
 int compare_id_descending( const void *a, const void *b )
 {
