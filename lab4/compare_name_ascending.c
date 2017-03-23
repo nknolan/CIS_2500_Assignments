@@ -5,6 +5,8 @@
 
 int compare_name_ascending( const void *a, const void *b )
 {
-    return ( *(element*)a.last_name - *(element*)b.last_name)
+    struct element *element1 = (struct element *)a;
+    struct element *element1 = (struct element *)b;
+    return strcmp(element1.last_name, element2.last_name);
 }
     
