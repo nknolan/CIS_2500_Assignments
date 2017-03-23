@@ -2,7 +2,7 @@
 #include <string.h>
 #include "compareElements.h"
 
-/* Compares names in descending alphabetical order. */
+/* Compares names in descending alphabetical order using strcmp. */
 
 int compare_name_descending( const void *a, const void *b )
 {
