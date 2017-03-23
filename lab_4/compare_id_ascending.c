@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "compareElements.h"
 
+/* Compares id numbers in ascending alphabetical order. */
+
 int compare_id_ascending ( const void * a, const void * b )
 {
     struct element *element_a = (struct element *)a;
