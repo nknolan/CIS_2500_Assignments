@@ -1,8 +1,9 @@
 CC=gcc
 CFLAGS=-Wall -ansi
+objects = sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o compare_name_descending.o compare_money_ascending.o compare_money_descending.o
 
-sortMe: sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o compare_name_descending.o compare_money_ascending.o compare_money_descending.o
-	$(CC) $(CFLAGS) -o sortMe sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o compare_name_descending.o compare_money_ascending.o compare_money_descending.o
+sortMe: $(objects)
+	$(CC) $(CFLAGS) -o sortMe $(objects)
 
 sortMe.o: sortMe.c compareFunctions.h compareElements.h
 	$(CC) $(CFLAGS) -c sortMe.c
