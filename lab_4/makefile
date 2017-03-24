@@ -1,6 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -ansi
-objects = sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o compare_name_descending.o compare_money_ascending.o compare_money_descending.o
+objects = sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o \
+	compare_name_descending.o compare_money_ascending.o compare_money_descending.o
 
 sortMe: $(objects)
 	$(CC) $(CFLAGS) -o sortMe $(objects)
@@ -28,4 +29,5 @@ compare_money_descending.o: compare_money_descending.c compareElements.h
 	$(CC) $(CFLAGS) -c compare_money_descending.c
 
 clean: sortMe
-	rm sortMe sortMe.o compare_id_ascending.o compare_id_descending.o compare_name_ascending.o compare_name_descending.o compare_money_ascending.o compare_money_descending.o
+	rm sortMe $(objects)
+	
