@@ -24,4 +24,4 @@ clear: myContactsList.db
 	rm myContactsList.db
 
 clean: contactsList
-rm contactsList $(objects)
+	rm contactsList $(objects)
